@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aec.civilapp.IndirectIri"
+    android:background="@drawable/gradient2">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rqr_comfort"
+        android:textColor="#100F0F"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+
+
+    <RadioGroup
+        android:id="@+id/iriRadioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1">
+
+        <RadioButton
+            android:id="@+id/iriBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/excellent_very_smooth_ride"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/iriBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/good_smooth_ride_with_just_a_few_bumps_or_depression"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/iriBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fair_comfortable_ride_with_intermediate_bumps"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/iriBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poor_uncomfortable_rides_with_frequent_bumps"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/iriBtn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/very_poor_uncomfortable_ride_with_constant_bumps_resulting_in_rattle_or_shake_of_vehicle"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rqr_speed"
+        android:textColor="#100D0E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <RadioGroup
+        android:id="@+id/iriRadioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2">
+
+        <RadioButton
+            android:id="@+id/iriBtn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/excellent_70_80_kmph"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/iriBtn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/good_50_70_kmph"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/iriBtn8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fair_35_50_kmph"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/iriBtn9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poor_20_35_kmph"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/iriBtn10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/very_poor_0_20_kmph"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/rqrCalculate"
+        android:layout_width="137dp"
+        android:layout_height="57dp"
+        android:background="@drawable/buttoncolor"
+        android:text="@string/calculate"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iriRadioGroup2" />
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E63"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/rqrCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iriRadioGroup2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

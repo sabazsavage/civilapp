@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aec.civilapp.DirectSiiInput"
+    android:background="@drawable/gradient2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDirectsii"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="50dp"
+            android:paddingStart="150dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            android:text="@string/sii_value_direct"
+            android:textColor="#0B0A0A"
+            android:textColorLink="#E91E63"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etdirectsii"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_the_value_of_sii_out_of_40"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnDirectSii"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttoncolor"
+            android:onClick="siiSubmitClicked"
+            android:text="@string/submit_direct_sii"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

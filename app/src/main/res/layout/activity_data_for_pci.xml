@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataForPci"
+    android:background="@drawable/gradient2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp">
+
+        <TextView
+            android:id="@+id/notethis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="36dp"
+            android:text="@string/note_if_the_road_is_in_worst_condition_then_choose_the_failed_section_option_otherwise_enter_the_details_below"
+            android:textColor="#872607"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/failedsectioncalculation"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoncolor"
+            android:onClick="failedSectionClicked"
+            android:text="@string/tap_here_for_failed_section"
+
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="652dp" />
+
+        <TextView
+            android:id="@+id/enterdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="36dp"
+            android:text="@string/enter_your_data_for_100m_stretch"
+            android:textColor="#151415"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/crackingsize"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="@string/cracking_width_mm"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/crackingarea"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/cracking_area"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/rutDepth"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/rut_depth_mm"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/rutDeptharea"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/rutting_area"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/ravelling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ravelling"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="187dp" />
+        
+     <RadioGroup
+         android:id="@+id/radioGroup1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+         <RadioButton
+             android:id="@+id/lossofMaterial"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/noticealble_loss_of_material"
+             android:clickable="true"
+             android:textSize="18sp"
+             android:focusable="true" />
+         <RadioButton
+            android:id="@+id/surfacetextureappearsasopen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surface_texture_appears_as_open"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/wideopen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wide_open_texture_with_loose_materials"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/severestripping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/severe_stripping_of_aggregates"
+            android:textSize="18sp" />
+     </RadioGroup>
+
+        <EditText
+            android:id="@+id/ravellingarea"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/ravelling_area"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/potholevol"
+            android:layout_width="335dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:hint="@string/pothole_volume_cc"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/potholenos"
+            android:layout_width="337dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:hint="@string/number_of_potholes"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/affected"
+            android:layout_width="337dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:hint="@string/affected_distance_from_edge_mm"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/edgebreakarea"
+            android:layout_width="337dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:hint="@string/edge_break_of_length"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/shoulder"
+            android:layout_width="337dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:hint="@string/shoulder_drop_off_difference_in_height_mm"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/shoulderlength"
+            android:layout_width="337dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:hint="@string/shoulder_drop_off_of_length"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+
+        <Button
+            android:id="@+id/calculateDistress"
+            android:layout_width="111dp"
+            android:layout_height="57dp"
+            android:background="@drawable/buttoncolor"
+            android:text="@string/calculate"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="652dp" />
+
+        <TextView
+            android:id="@+id/answerDs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="36dp"
+            android:textColor="#E91E63"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/answerPci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="36dp"
+            android:textColor="#E91E63"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+</LinearLayout>
+</ScrollView>

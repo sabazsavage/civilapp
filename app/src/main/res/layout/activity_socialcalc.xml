@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".socialcalc"
+    android:background="@drawable/gradient2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp">
+
+
+        <TextView
+            android:id="@+id/tvAadt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/aadt_pcu"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAadt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_the_value_of_aadt"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tvTerrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/terrain"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgTerrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbPlain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plain"
+            android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbRolling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rolling"
+                android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbMountainous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mountainous"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbSteep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/steep"
+            android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvEduFac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/educatiinal_facility"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etLpSchool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_lp_schools"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/etHighSchool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_high_schools"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/etColleges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_colleges"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tvMedFac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/medical_facility"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSubCentre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_sub_centres"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/etHospitals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_hospitals"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tvMarkFac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/market_facility"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etDailyMarkets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_daily_markets"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/etWeeklyMarket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_weekly_markets"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tvIndustries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/number_of_industries"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgIndustries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbInd0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_0" />
+
+        <RadioButton
+            android:id="@+id/rbInd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_ind1" />
+
+        <RadioButton
+            android:id="@+id/rbInd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_ind2" />
+
+        <RadioButton
+            android:id="@+id/rbInd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_ind3" />
+
+        <RadioButton
+            android:id="@+id/rbInd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_ind4" />
+
+        <RadioButton
+            android:id="@+id/rbInd5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_ind5"
+            tools:text="5" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/tvTourist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/number_of_tourist_religious_spots"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/rgTourist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbTour0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_0" />
+
+        <RadioButton
+            android:id="@+id/rbTour1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_1" />
+
+        <RadioButton
+            android:id="@+id/rbTour2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2" />
+
+        <RadioButton
+            android:id="@+id/rbTour3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_3" />
+
+        <RadioButton
+            android:id="@+id/rbTour4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_4" />
+
+        <RadioButton
+            android:id="@+id/rbTour5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_5" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvRoadClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/road_classification"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/rgRoadClassification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbMdr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mdr" />
+
+        <RadioButton
+            android:id="@+id/rbSh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sh" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSiiCalculate"
+            android:layout_width="157dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/buttoncolor"
+            android:text="@string/calculate"
+            android:textColor="#0B0A0A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSiiAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#0B0A0A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPsSiiAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#0B0A0A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/tvConfused"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#0B0A0A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+</ScrollView>

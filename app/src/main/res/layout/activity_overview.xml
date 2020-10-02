@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aec.civilapp.Overview"
+    android:background="@drawable/gradient2">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <TextView
+        android:id="@+id/textViewover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/as_the_digitalisation_has_stepped_into_our_lives_having_everything_present_at_our_fingertips_is_something_that_has_gone_ingrained_in_our_brains_smartphones_gave_a_new_face_to_service_sector_with_the_introduction_of_mobile_apps_to_the_market_mobile_apps_are_applications_designed_to_perform_a_specific_task_the_priority_score_calculator_is_such_an_app_that_predicts_a_score_that_gives_the_user_an_idea_while_choosing_among_different_pavements_for_maintenance_service_taking_account_of_four_important_factors_that_are_pci_iri_sii_and_cd_this_application_gives_us_a_rating_for_a_particular_road_pavement_based_upon_the_individual_ratings_from_the_four_factors_going_over_hundreds_of_documents_over_the_internet_just_to_know_the_pavement_priority_can_be_easily_replaced_by_this_calculator_which_is_more_user_friendly_and_consumes_much_less_time_than_the_earlier"
+        android:textColor="#000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
+
+        <TextView
+            android:id="@+id/textViewovheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/overview"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textViewover"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

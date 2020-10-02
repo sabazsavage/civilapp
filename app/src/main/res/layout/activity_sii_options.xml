@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aec.civilapp.SiiOptions"
+    android:background="@drawable/gradient2">
+
+    <TextView
+        android:id="@+id/siitxt"
+        android:layout_width="283dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/choose_one_of_the_methods"
+        android:textColor="#151113"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/directbbd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/directSii"
+        android:layout_width="220dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="192dp"
+        android:text="Known Value"
+        android:background="@drawable/buttoncolor"
+        android:textSize="22sp"
+        android:onClick="directSiiClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/indirectSii"
+        android:layout_width="220dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="96dp"
+        android:text="UNKNOWN VALUE"
+        android:background="@drawable/buttoncolor"
+        android:textSize="22sp"
+        android:onClick="indirectIriClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directSii"
+        app:layout_constraintVertical_bias="0.064" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

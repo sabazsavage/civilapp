@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aec.civilapp.IndirectBbd"
+    android:background="@drawable/gradient2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/bbdindirecttext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="@string/enter_thickness_of_different_layers_in_mm"
+            android:textColor="#0C0B0C"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bbdIndSurfaceCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/surface_thickness_mm"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/bbdIndBaseCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/binder_thickness_mm"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/bbdIndSubBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/base_thickness_mm"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/bbdIndSubgrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/sub_base_thickness_mm_1"
+            android:inputType="numberDecimal"
+            android:paddingTop="20dp" />
+
+        <TextView
+            android:id="@+id/etCbrValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/cbr_value_of_soil_subgrade"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bbdIndCbr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/cbr_value"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnIndBbd"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttoncolor"
+            android:text="@string/calculate"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAnsCd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#E91E63"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
